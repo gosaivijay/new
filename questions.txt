@@ -1,0 +1,326 @@
+1)What is DevOps?
+ DevOps is the combination of development and operation.
+ DevOps is the union of people, process and technology to continually provide value to customers.
+ DevOps is an IT mindset that encourages communication, collaboration, integration, and automation 
+  among software developers and IT operations teams with the overall goal to enhance the speed and quality of delivering software.
+
+2)Advantages or Benifits of DevOps?
+‌ Improve deployment frequency
+‌ Process improvements
+‌ Achieve faster time to deploy
+‌ Lower failure rate of releases
+‌ Shorten time interval between the discovery of a bug and the deployment of the fix
+‌ Improve time to recovery
+‌ Improved collaboration
+
+3)Why we need DevOp?
+ We need a DevOps  to achieve software development in less time with more productivity;
+  releases can happen very frequently, work can be divided into small tasks and assign to proper teams,
+  we can roll back to the previous versions easily and it will reduce the cost to the company.
+ 
+4)Before DevOps vs After DevOps?
+
+
+5)What is RCA in software
+	RCA means root cause analysis. This process of identifying WHY the problem has occurred in the software is called Root Cause Analysis (RCA).
+
+6)What is Dev environment in software?
+        A development environment is a collection of procedures and tools for developing, testing and debugging an application or program
+
+7)What is QA or Testing environment in software?
+  A Test environment is where you test your upgrade procedure against controlled data and perform controlled testing of the resulting Waveset application.
+
+  Quality assurance(QA) environment is where you test your upgrade procedure against data, hardware, and software that closely simulate the Production environment and where you allow intended users to test the resulting Waveset application.
+
+8)Differents between windows and Linux?
+  Both of these are operating systems with slightly different functionalities..
+  Linux is free and open source operating system whereas Windows is a commercial operating system whose source code is inaccessible.
+  Linux provides high security than windows because Linux is open source.
+  Windows must boot from the primary partition. In contrast, there is no such constraint in Linux it can be booted from either primary or logical partition
+
+9)Linux components? 
+	are kernel:-Kernel is the core of the Linux based operating system
+	system library:-special types of functions that are used to implement the functionality of the operating system.
+	shell:-It takes commands from the user and executes the kernel’s functions.
+	hardware layer:-This layer consists all peripheral devices like RAM/ HDD/ CPU etc.
+	system utility:- It provides the functionalities of an operating system to the user.
+
+10)What is IP in server?
+   IP stands for "Internet Protocol," which is the set of rules governing the format of data sent via the internet or local network
+
+11)Why u choose DevOps...why not other Technologies?
+
+   bez i like to decome a software eng . i start knowing some  codeing and technologies bt on that time devops is more popular and high scale more over time saving.high velocity..
+i have an ambision to became software engg.
+
+12)What is RAM and CPU in linux?
+
+13)Linux vs window's?
+  When we compare file system in Windows and Linux, in Microsoft Windows, files are stored in folders on different data drives.
+ But, in Linux, files are ordered in a tree structure starting with the root directory.
+In Linux you can have 2 files with the same name in the same directory while in Windows, you cannot have 2 files with the same name in the same folder.
+
+----------------------------------------------------------------22/1/22-----------------------------------------------------------------------------------
+
+14)What is EC2 instance?
+
+	EC2 stands for amazon elastic compute cloud
+	Ec2 is a basic virtual machine with customizable hardware components and an OS. The system allows you to run various virtual computers and manage the same with a single hardware
+
+15)Types of EC2 instances?
+
+	These ec2 instances can be used in different cases
+  1) General Purpose Instances:-
+	General Purpose Instances is the most used ec2 instance type. They are designed for beginners with an easy to use application
+  2) Compute Optimized Instances:-
+	 this types are ideal for raw compute power systems like scientific modeling,  web servers with high-performance, and gaming servers. They are pricier when compared to other instance types, but deploy faster
+  3) Memory-Optimized Instances:-
+	Memory-Optimized Instances are perfect for memory sensitive applications. They include a high-performance database, real-time massive data analytics, and more
+  4) Storage Optimized Instances:-
+	If you require high SSD storage, it’s best to opt for Storage Optimized Instances. These ec2 types provide high sequential reading and writing formats for large volume data sets
+	
+
+16)What is pem file in AWS?
+
+  PEM or Privacy Enhanced Mail . PEM certificates are frequently used for web servers as they can easily be translated into readable data using a simple text editor
+
+17)Differents between pem and private key
+
+     PEM (Privacy Enhanced Mail) is a base64 container format for encoding keys and certificates. .pem download from AWS when you created your key-pair.    This is only a one time download and you cannot download it again.
+      PPK(Putty Private Key) is a windows ssh client, it does not support .pem format. Hence you have to convert it to .ppk format using PuTTyGe
+
+	ssh means Secure Shell Protocol
+
+
+18)How to check the hidden files in linux
+
+    ls -a list all files, including hidden
+    ls -ld to show only hidden files
+
+
+19)How to check the cpu and memory in linux?
+
+   cpu:- to display cpu information 
+	 cat /proc/cpuinfo
+   momery :-to display memory information 
+	 free ,free -g(gega bite), free -m(mega bite),free -h
+         cat /proc/meminfo
+
+20)How to check the processes in linux
+
+   $to see all processess
+      ps
+   $to view running in system all processess 
+      ps -e
+   $to see full command line in processess
+      ps -ef
+   $to find all processes for user root
+      ps -fu root
+21)What is the kernel in linux?
+
+    Linux kernel is a free, open-source,modular . It is the main component of the Linux operating system (OS) and is the core interface between the computer’s hardware and its processes.
+    Kernel is the core of the Linux based operating system
+
+22)How to check the kernel version in linux?
+
+    $ uname -r
+    $cat /proc/version
+  -a – Display all information
+  -o – Display the operating system (usually GNU/Linux)
+  -r – Display kernel release
+  -v – Display kernel version
+
+23)What is yum in linux?
+
+    yum is the primary tool for getting, installing, deleting, querying, and managing Red Hat Enterprise Linux RPM software packages.
+
+24)Differents between CentOS and Ubuntu?
+
+     both are same bt different linux platform
+     The main difference between CentOS and Ubuntu is that CentOS is a community-supported Linux distribution that is functionally compatible with Red Hat Enterprise Linux while Ubuntu is an open source Linux distribution based on Debian. 
+
+25)What is logs in linux?
+
+     Linux logs provide a timeline of events for the Linux operating system, applications.When issues arise, analyzing log files is the first thing an administrator needs to do..
+
+26)Why logs are important in software?
+bez to see storge and erorrs
+  $ to see logs files
+     --->cd /var/log
+
+27)How to check the java version
+   java -version
+--------------------------------------------------------------------23/1/22-------------------------------------------------------------------------------
+28)How to troubleshoot linux server issue's?
+     go to log page and seach the error
+      -->cd /var/log/
+	-->ls
+	 -->cat messages
+      not running properlly
+	  -->cat message |grap error (or) failed  
+
+29)How to fix server space issues?
+    --->df -h (see the space)
+
+ wether clearup the logs or increase the storage
+
+30)How to check open ports in linux?
+   sudo lsof -i -P -n
+
+31)What is /var/log/mesages in linux?
+   This file has all the global system messages located inside, including the messages that are logged during system startup
+ server log 
+
+32)How to secure linux server
+
+33)What is firewall and how to enable?
+   Firewall is a network security system that filters and controls the traffic on a predetermined set of rules. This is an intermediary system between the device and the internet.
+   In Linux there are many different types of firewalls used, but most standard ones are Iptables and Firewalld
+       firewalld :-In Linux there are many different types of firewalls used, but most standard ones are Iptables and Firewalld
+       Iptables :- Iptables is another service which decides to allow, drop or return IP packets. 
+   service firewalld stop or start or status or disable or enable
+   iptables -F  (clear the rules)
+   iptables -L  (List the current rules of iptable)
+   iptables -I  ( To append a rule at the start of the chain)
+    
+
+34)How to start and stop the. Services ( command )
+   sevices:-In the systemd utility, a service is referred to as a unit. A unit is any resource that the system knows how to act on and administrate.
+   1. List all services: systemctl list-unit-files --type service -all
+   2. Command Start: sudo systemctl start service.service
+   3. Command Stop: sudo systemctl stop service.service
+   4. Command Status: sudo systemctl status service.service
+   5. Command Restart: sudo systemctl restart service.service
+   6. Command Enable: sudo systemctl enable name_service.service
+  systemct1:-The systemctl command is a utility which is responsible for examining and controlling the systemd system and service manager
+
+35)What is application logs?
+    log is a file of events that are logged by a software application. It contains errors, informational events and warnings
+
+36)What is root in linux?
+     It is a user account for administrative purposes, and typically has the highest access rights on the system.
+
+37)What is inode in linux?
+   An Inode number is a uniquely existing number for all the files in Linux and all Unix type systems. When a file is created on a system, a file name and Inode number is assigned to it
+
+38)What is chmod and chown?
+   chmod: chmod stand for change modification permission and allows changing permissions of files and folders
+   chown: The chown command stands for “change owner”, and allows changing the owner of a given file or folder, which can be a user and a group.
+
+39)How to provide full access for any file in linux server:
+   by useing chmod commaind and command is  """chmod -R""" 
+    chmod 777 filename
+
+40) What is linux file system?
+    It is the collection of data and/or files stored in a computer’s hard disk or storage
+------------------------------------------------------------24/1/22---------------------------------------------------------------------------------
+41)What is us uptime in linux?
+   Uptime is a command that returns information about how long your system has been running together with the current time
+       uptime (options)
+              -p, --pretty   show uptime in pretty format
+              -h, --help     display this help and exit
+              -s, --since    system up since
+              -V, --version  output version information and exi
+
+42)What is chmod in linux?
+   chmod: chmod stand for change modification permission and allows changing permissions of files and folders
+
+43)How to increase the space in linux commands?
+
+44)How to extend the file system in linux?
+
+45)How to remove packages from the server?
+   yum remove packagesname
+
+46)Why SELINUX in linux?
+   Security-Enhanced Linux (SELinux) is a security architecture for Linux® systems that allows administrators to have more control over who can access the system. It was originally developed by the United States National Security Agency (NSA) 
+
+47)How to fix space issue in linux?
+
+48)What is df -h?
+   it is a command in linux and it use to check the space  in server.and also it gives the details in bytes, megabytes, and gigabyte.
+-----------------------------------------------------25/1/22-------------------------------------------------------------------------------------------
+                                           25/01/2022 git
+
+What is git: 
+   ==> Git is a version control system used for tracking changes in computer files. It is  generally used for source code management in software development.
+   ==>Git is used to tracking changes in the source code      
+   ==>It allows multiple developers to work together  
+
+Why git?
+   Git is a DevOps tool used for source code management. It is a free and open-source version control system used to handle small to very large projects efficiently
+
+What is branch and repository in git
+   A repository is your whole project (directories and files) that you clone on your computer. 
+   A branch is a version of your repository
+
+What is git fork?
+Forking is a concept while cloning is a process. Forking is just containing a separate copy of the repository and there is no command involved
+
+
+How to push file from git to GitHub:
+ by useing the command 
+  &git push  
+
+What is git add and git commit
+ git add : it is to add the file from work space to index stage ..
+ git commit : git commit is to send the file from index /staging to local repo .
+
+What is GitHub: 
+it will use to storing the application code..
+
+Differents between git and GitHub?
+       S.No.	       Git	                   			GitHub
+        1.	Git is a software.	        		GitHub is a service.
+        2.	Git is a command-line tool			GitHub is a graphical user interface
+        3.	Git is installed locally on the system   	GitHub is hosted on the web
+        4.	Git is maintained by linux.			GitHub is maintained by microsoft.
+
+Differents between git and SVN?
+  S.No                GIT	                                      SVN
+   1    Git is open source distributed vice               Apache Subversion is an open source software version and revision control system 
+	control system developed by Linus 			under Apache license
+        Torvalds in 2005. It emphasis on
+        speed and data integrity	
+
+   2 Git has a Distributed Model.	                  SVN has a Centralized Model.
+   3 Git is more difficult to learn.                      SVN is much easier to learn as compared to git.
+     It has more concepts and commands. 
+
+	
+What is git status: 
+  git status is to find the modified  file  in workspace or index space or loca repo.
+  when we exit the command on that time it show the file name by colour .. red colour means it is in workspace then blue colour means index /staging
+
+What is git diff: 
+   git diff is a multi-use Git command that when executed runs a diff function on Git data sources. These data sources can be commits, branches, files and more.The git diff command is often used along with git status and git log to analyze the current state of a Git repo.
+
+What is git merge :
+Git merge is a command that allows you to merge branches from Git.
+
+Git merge vs git rebase?
+  Git rebase and merge both integrate changes from one branch into another..
+         Git rebase moves a feature branch into a master
+         it is use to uncreate the data in logs.if in case have some logs that data will not be shown..
+         Git merge adds a new commit, preserving the history.
+
+Git revert vs git reset?
+  git revert:-This command creates a new commit that undoes the changes from a previous commit. This command adds new history to the project
+         $ git revert
+  git reset : this command is use to change files from local repo to index file ...and index to working space..
+        $ git reset --HEAD
+What is git stash?
+  Git stash is temporary storage area.
+Often, when you’ve been working on part of your project, things are in a messy state and you want to
+switch branches for a bit to work on something else. The problem is, you don’t want to do a commit of
+half-done work just so you can get back to this point later. The answer to this issue is the git stash command
+
+List of version control system ?
+  Git ,github,bitbucket,gitlab,AWS CodeCommit ,
+
+What is version control system in git
+   Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later
+
+What is version in application
+   Application versioning is a way to differentiate current and past application configurations. Rule resolution can look through all the minor and patch versions for the current major ruleset
+   

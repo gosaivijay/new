@@ -1,0 +1,10 @@
+what is  devops?
+DevOps  is the appoach how to take the application code from devlopment and make it deploy it on producation.....
+Devops is the combination of devolper and  operation   team..
+   
+
+before devops 
+   sdlc (plan,code,build.test.release.monitor,maintain)
+after devops 
+  (DEV+Ops)= DevOPs methology
+
