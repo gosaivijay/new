@@ -1,24 +1,55 @@
-# Phase 1: Basic Conversational AI
+# Phase 2a: Enhanced Conversational AI with basic NLP-like features
 # This will be a simple command-line interface AI
+
+import re
+import datetime
+import random
 
 def get_response(user_input):
     """
-    Generates a response based on user input.
+    Generates a response based on user input using more flexible matching.
     """
-    user_input = user_input.lower() # Convert to lowercase for easier matching
+    user_input_lower = user_input.lower()
 
-    if "hello" in user_input or "hi" in user_input:
+    # Greeting
+    if re.search(r"\b(hello|hi|hey|greetings)\b", user_input_lower):
         return "Hello there! How can I help you today?"
-    elif "what is your name" in user_input:
-        return "I am a prototype AI, inspired by Jarvis."
-    elif "what can you do" in user_input:
-        return "Currently, I can understand a few basic commands. We are working on expanding my capabilities!"
-    elif "how are you" in user_input:
+
+    # Name inquiry
+    elif re.search(r"\b(what is|what's|tell me)\s+(your name)\b", user_input_lower) or \
+         re.search(r"\b(who are you)\b", user_input_lower):
+        return "I am a prototype AI, inspired by Jarvis. You can call me Jules."
+
+    # Capability inquiry
+    elif re.search(r"\b(what can you do|what are your capabilities|help|tell me what you can do)\b", user_input_lower): # Added "tell me what you can do"
+        return "I can currently understand some basic questions and commands. For example, you can ask my name, how I am, the time, or tell me a joke. We are working on expanding my capabilities!"
+
+    # Well-being inquiry
+    elif re.search(r"\b(how are you|how's it going|how do you feel)\b", user_input_lower):
         return "I am functioning optimally, thank you for asking."
-    elif "bye" in user_input or "exit" in user_input or "quit" in user_input:
+
+    # Time inquiry
+    elif re.search(r"\b(what time is it|tell me the time|current time)\b", user_input_lower):
+        now = datetime.datetime.now()
+        return f"The current time is {now.strftime('%I:%M %p')}."
+
+    # Joke request
+    elif re.search(r"\b(tell me\s+(a\s+)?joke|say something funny|joke|tell me something funny)\b", user_input_lower): # Made "a" optional and added "tell me something funny"
+        jokes = [
+            "Why don't scientists trust atoms? Because they make up everything!",
+            "Why did the scarecrow win an award? Because he was outstanding in his field!",
+            "What do you call fake spaghetti? An impasta!",
+            "Why did the bicycle fall over? Because it was two tired!"
+        ]
+        return random.choice(jokes)
+
+    # Farewell
+    elif re.search(r"\b(bye|exit|quit|goodbye|see you)\b", user_input_lower):
         return "Goodbye! It was nice talking to you."
+
+    # Default
     else:
-        return "I'm sorry, I don't understand that yet. I am still learning."
+        return "I'm sorry, I don't quite understand that yet. I am still learning."
 
 def main():
     """
